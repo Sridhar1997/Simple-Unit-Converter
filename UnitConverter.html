@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit converter</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="UnitConverter.css">
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="UnitConverter.js"></script>
+</head>
+<body>
+	<form name="dist">
+		<fieldset>
+			<legend id="DistanceUnits">Distance units</legend> 
+			<div class="container">
+				<label id="MeterLabel">Meter</label>
+				<input name="meter" id="meter" class="dist number" type="text" placeholder="number" autofocus>
+			</div>
+			<div class="container">
+				<label id="FathomLabel">Fathom</label>
+				<input name="fathom" id="fathom" class="dist number" type="text" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="FootLabel">Foot</label>
+				<input name="feet" id="feet" class="dist number" type="text" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="YardLabel">Yard</label>
+				<input name="yard" id="yard" class="dist number" type="text" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="MileLabel">Mile</label>
+				<input name="mile" id="mile" class="dist number" type="text" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="NauticalLabel">Nautical mile</label>
+				<input name="nautical" id="nautical" class="dist number" type="text" placeholder="number">
+			</div>
+			<div class="container">
+				<input name="convertdist" id="convertdist" class="convert" value="Convert" type="button">
+				<input name="resetdist" value="Reset" type="reset" id="resetdist" class="reset">
+			</div>
+		</fieldset>
+	</form>
+	<form name="area">
+		<fieldset>
+			<legend id="AreaUnits">Area units</legend>
+			<div class="container">
+				<label id="SqrMeterLabel">Sqr meter</label> 
+				<input type="text" id="smeter" name="smeter" class="area number" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="SqrFathomLabel">Sqr fathom</label> 
+				<input type="text" id="sfathom" name="sfathom" class="area number" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="HectareLabel">Hectare</label> 
+				<input type="text" id="hectare" name="hectare" class="area number" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="CadAcreLabel">Cad. acre</label> 
+				<input type="text" id="cacre" name="cacre" class="area number"placeholder="number">
+			</div>
+			<div class="container">
+				<label id="AcreLabel">Acre</label> 
+				<input type="text" id="acre" name="acre" class="area number" placeholder="number">
+			</div>
+            <div class="container">
+                <label id="SqrftLabel">Sqr feet</label>
+                <input type="text" id="sqrft" name="sqrft" class="area number" placeholder="number">
+            </div>
+			<div class="container">
+				<input name="convertarea" value="Convert" id="convertarea" class="convert" type="button">
+				<input name="resetarea" value="Reset" type="reset" id="resetarea" class="reset">
+			</div>
+		</fieldset>
+	</form>
+	<form name="angle">
+		<fieldset>
+			<legend id="AngleUnits">Angle units</legend> 
+			<div class="container">
+				<label id="DegreeLabel">Degree</label>
+				<input type="text" id="degree" class="angle number" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="DMSLabel">Deg-Min-Sec</label>
+				<input type="text" id="dms" class="angle dms" placeholder="deg-min-sec">
+			</div>
+			<div class="container">
+				<label id="GradLabel">Grads</label>
+				<input type="text" id="grad" class="angle number" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="MillLabel">Mills</label>
+				<input type="text" id="mills" class="angle number" placeholder="number">
+			</div>
+			<div class="container">
+				<label id="RadianLabel">Radian</label>
+				<input type="text" id="radian" class="angle number" placeholder="number">
+			</div>
+			<div class="container">
+				<input name="convertangle" id="convertangle" class="convert" value="Convert" type="button">
+				<input name="resetangle" id="resetangle" value="Reset" type="reset" class="reset">
+			</div>
+		</fieldset>
+	</form>
+	<p id="Usage">Usage:</p>
+	<p id="UsageText">Fill the field of the unit and click on Convert or press Enter key.
+	</p>
+</body>
+</html>
